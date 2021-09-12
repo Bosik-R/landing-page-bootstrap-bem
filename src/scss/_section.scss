@@ -1,0 +1,28 @@
+.section {
+	background-color: $bg-color;
+	position: relative;
+	padding-top: 50px;
+	padding-bottom: 130px;
+
+	@media (max-width: 768px) {
+		padding-top: 30px;
+		padding-bottom: 80px;
+	}
+
+	@media (max-width: 425px) {
+		padding-top: 30px;
+		padding-bottom: 50px;
+	}
+
+	&__svg {
+		position: absolute;
+		z-index: 1;
+		bottom: -135px;
+		left: 154px;
+
+		@media (max-width: 768px) {
+			left: 50px;
+			transform: scale(0.4);
+		}
+	}
+}
